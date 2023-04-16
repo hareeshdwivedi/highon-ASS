@@ -1,0 +1,233 @@
+.home-main-container {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.home-container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-container-header > button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-right: 8px;
+}
+.home-container-header > button > img {
+  width: 20px;
+  height: 20px;
+  transform: rotateY(180deg);
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: var(--primary-fontWeight);
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+}
+.home-container-profiles {
+  margin: 1rem 0.5rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.home-container-profiles > .profiles-container {
+  /* width: 100%; */
+  height: 3.5rem;
+  background-color: white;
+  border-radius: 5rem;
+
+  display: flex;
+  gap: 2rem;
+
+  align-items: center;
+
+  overflow-x: scroll;
+  padding: 0 2.12rem;
+  min-width: 50%;
+  max-width: 93%;
+
+  justify-content: center;
+}
+
+.profiles-container::-webkit-scrollbar {
+  display: none;
+}
+.profiles-container > .profile {
+  border-radius: 5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: blue;
+
+  position: relative;
+}
+
+.profiles-container > .profile:first-child {
+  margin-left: 0.5rem;
+}
+
+.profile > img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5rem;
+}
+.profile-notification {
+  position: absolute;
+
+  right: 2px;
+  top: 2px;
+
+  width: 8px;
+  height: 8px;
+  background-color: red;
+
+  border-radius: 5rem;
+}
+
+.profiles-heading {
+  font-size: 1.5rem;
+  color: aliceblue;
+  text-align: center;
+  border-bottom: 1px dotted grey;
+}
+
+.profiles-heading.user-chats {
+  margin-top: 3rem;
+}
+/* UNCHATTED PROFILE CSS */
+.unchatted-main-profiles-container {
+  width: 100%;
+  height: 60%;
+}
+
+.unchatted-profiles-container {
+  height: 60%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+  padding: 1rem;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.unchatted-profiles-container::-webkit-scrollbar {
+  display: none;
+}
+
+.unchatted-profile {
+  min-width: 225px;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgb(161, 159, 159);
+
+  background-color: rgba(24, 67, 21, 0.3);
+
+  backdrop-filter: blur(8px);
+}
+
+.unchatted-profile:first-child {
+  margin-left: 4rem;
+}
+
+@media screen and (min-width: 600px) {
+  .unchatted-profile:first-child {
+    margin-left: 0;
+  }
+}
+/* .unchatted-profile h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.unchatted-profile p {
+  margin: 0;
+  font-size: 1rem;
+  color: #777;
+} */
+
+.unchatted-profile-image-container {
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+  border-radius: 5rem;
+}
+
+.unchatted-profile-image-container > img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 5rem;
+}
+
+.unchatted-profile-details-container {
+  background-color: rgba(256, 256, 256, 0.9);
+  width: 100%;
+  height: 100%;
+
+  border-radius: 16px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.uncharted-profile-name {
+  font-size: var(--Primary-fontSize);
+  color: var(--secondary-color);
+}
+
+.uncharted-profile-email {
+  font-size: var(--secondary-fontSize);
+  color: var(--primary-color);
+}
+
+.uncharted-profile-message > button {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  color: var(--secondary-color);
+  font-size: var(--secondary-fontSize);
+
+  border: 1px solid grey;
+  border-radius: 5rem;
+
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.no-unchatted-users {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+.no-profile-container {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5rem;
+  color: var(--secondary-color);
+}
